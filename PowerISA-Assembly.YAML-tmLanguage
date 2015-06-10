@@ -46,11 +46,8 @@ patterns:
 - name: constant.numeric.binary.PowerISA
   match: (?<![a-zA-Z])%[01]+\b
 
-- name: constant.numeric.decimal.PowerISA
-  match: (?<![a-zA-Z])[+-]?[0-9]+\b
-
 - name: variable.language.register.PowerISA
-  match: (?i)\b([ad][0-7]|SP|PC|vbr|fp[0-7])\b
+  match: ((?i)([rv][0-9]|[rv][1-2][0-9]|[rv]3[0-1]|vs[0-9]|vs[1-5][0-9]|vs6[0-3])!?(?-i))?\b
 
 - name: keyword.other.opcode.cpu.bl.PowerISA
   match: (?i)\b(bchg|bclr|bset|btst)(\.[bl])?\b
