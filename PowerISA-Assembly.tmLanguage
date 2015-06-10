@@ -113,99 +113,39 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>((?i)([rv][0-9]|[rv][1-2][0-9]|[rv]3[0-1]|vs[0-9]|vs[1-5][0-9]|vs6[0-3])!?(?-i))?\b</string>
+			<string>((?i)([rv][0-9]|[rv][1-2][0-9]|[rv]3[0-1]|vs[0-9]|vs[1-5][0-9]|vs6[0-3]))?\b</string>
 			<key>name</key>
-			<string>variable.language.register.PowerISA</string>
+			<string>storage.other.register</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(bchg|bclr|bset|btst)(\.[bl])?\b</string>
+			<string>(?i)\b(vperm)?\b</string>
 			<key>name</key>
-			<string>keyword.other.opcode.cpu.bl.PowerISA</string>
+			<string>keyword.other.opcode.vmx.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(lsr|move|tst|moves|wddata|neg|negx|not|or|ori|addq|addi|addx|and|andi|asl|asr|cas|chk2|clr|cmp|cmpi|cmpm|cmp2|eor|eori|rol|ror|roxl|roxr|sub|subi|subq|subx|tbls|tblsn|tblu|tblun|add|lsl)(\.[bwl])?\b</string>
+			<string>(?i)\b(xxswapd|xxlnand)?\b</string>
 			<key>name</key>
-			<string>keyword.other.opcode.cpu.bwl.PowerISA</string>
+			<string>keyword.other.opcode.vsx.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(fsincos|ftst)(\.[bwlsdxp])?\b</string>
+			<string>(?i)\b(lwa|lxvd2x|stxvd2x)?\b</string>
 			<key>name</key>
-			<string>keyword.other.opcode.cpu.bwlsdxp.PowerISA</string>
+			<string>keyword.other.opcode.memory.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(maaac|mac|traplo|masac|trapne|trapeq|movea|movem|traple|movep|movm|msaac|msac|mssac|muls|mulu|pbbs|pbbc|adda|pblc|pbss|pbls|pbsc|pbas|pbac|pbws|pbwc|pbis|pbic|pbgs|pbgc|pbcs|pbcc|cas2|chk|cmpa|ptrapbs|ptrapbc|ptrapls|ptraplc|ptrapss|ptrapsc|ptrapas|ptrapac|ptrapws|ptrapwc|ptrapis|divs|ptrapic|ptrapgs|divu|ptrapgc|ptrapcs|ptrapcc|ext|fbf|fbeq|fbogt|fboge|fbolt|fbole|fbogl|fbor|fbun|fbueq|fbugt|fbuge|fbult|fbule|fbne|fbt|fbsf|fbseq|fbgt|fbge|fblt|fble|fbgl|fbgle|suba|fbngle|fbngl|fbnle|fbnlt|fbnge|fbngt|fbsne|fbst|tpf|trapt|trapf|traphi|trapls|trapcc|traphs|trapcs|trapge|trapmi|trappl|trapvs|trapvc|traplt|link|trapgt|ftrapf|ftrapeq|ftrapogt|ftrapoge|ftrapolt|ftrapole|ftrapogl|ftrapor|ftrapun|ftrapueq|ftrapugt|ftrapuge|ftrapult|ftrapule|ftrapne|ftrapt|ftrapsf|ftrapseq|ftrapgt|ftrapge|ftraplt|ftraple|ftrapgl|ftrapgle|ftrapngle|ftrapngl|ftrapnle|ftrapnlt|ftrapnge|ftrapngt|ftrapsne|ftrapst)(\.[wl])?\b</string>
+			<string>(?i)\b(addi|addis|li|lis)?\b</string>
 			<key>name</key>
-			<string>keyword.other.opcode.cpu.wl.PowerISA</string>
+			<string>keyword.other.opcode.arithmetic.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(move16|unlk|unpk|nop|reset|pack|stop|bfchg|pflush|bfclr|pflusha|bfexts|pflushan|bfextu|pflushn|bfffo|pflushr|bfins|pflushs|bfset|ploadr|bftst|ploadw|bgnd|plpar|plpaw|bkpt|callm|prestore|psave|cinvl|cinvp|cinva|cpushl|cpushp|cpusha|ptestr|ptestw|pulse|rtd|rte|rtm|rtr|rts|trap|trapv|fnop|frestore|fsave|halt|illegal|intouch|jmp|jsr|linea|line_a|linef|line_f)\b</string>
+			<string>(?i)\b(blr)?\b</string>
 			<key>name</key>
-			<string>keyword.other.opcode.cpu.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(bhs|blo|bhi|bls|bcc|bcs|bne|beq|bvc|bvs|bpl|bmi|bge|blt|bgt|ble|bra|bsr|jbhs|jblo|jbhi|jbls|jbcc|jbcs|jbne|jbeq|jbvc|jbvs|jbpl|jbmi|jbge|jblt|jbgt|jble|jbra|jbsr)(\.[bwls])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.bwls.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(pmovefd)(\.[ld])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.ld.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(mov3q|movclr|movec|moveq|wdebug|pea|bitrev|byterev|divsl|divul|exg|pvalid|rems|extb|remu|sats|ff1|lea)(\.[l])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.l.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(lpstop|pdbbs|pdbbc|pdbls|pdblc|pdbss|pdbsc|pdbas|pdbac|pdbws|pdbwc|pdbis|pdbic|pdbgs|pdbgc|pdbcs|pdbcc|dbt|dbf|dbra|dbhi|dbls|dbcc|dbhs|dbcs|dblo|dbne|dbvs|dbeq|dbpl|dbvc|dbmi|dbge|dblt|dbgt|dble|strldsr|swap|fdbf|fdbeq|fdbogt|fdboge|fdbolt|fdbole|fdbogl|fdbor|fdbun|fdbueq|fdbugt|fdbuge|fdbult|fdbule|fdbne|fdbt|fdbsf|fdbseq|fdbgt|fdbge|fdblt|fdble|fdbgl|fdbgle|fdbngle|fdbngl|fdbnle|fdbnlt|fdbnge|fdbngt|fdbsne|fdbst)(\.[w])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.w.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(nbcd|abcd|psbs|psbc|psls|pslc|psss|pssc|psas|psac|psws|pswc|psis|psic|psgs|psgc|pscs|pscc|sbcd|st|sf|shi|sls|scc|shs|scs|slo|sne|seq|svc|svs|spl|smi|sge|slt|sgt|sle|tas|fsf|fseq|fsogt|fsoge|fsolt|fsole|fsogl|fsor|fsun|fsueq|fsugt|fsuge|fsult|fsule|fsne|fst|fssf|fsseq|fsgt|fsge|fslt|fsle|fsgl|fsgle|fsngle|fsngl|fsnle|fsnlt|fsnge|fsngt|fssne|fsst)(\.[b])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.b.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(mvs|mvz)(\.[bw])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.bw.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(pmove)(\.[bwld])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.bwld.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(fmovem)(\.[ldx])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.cpu.ldx.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(fmovecr)(\.[x])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.fpu.x.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?i)\b(fabs|fsabs|fdabs|facos|fadd|fsadd|fdadd|fasin|fatan|fatanh|fcmp|fcos|fcosh|fdiv|fsdiv|fddiv|fetox|fetoxm1|fgetexp|fgetman|fint|fintrz|flog10|flog2|flogn|flognp1|fmod|fmove|fsmove|fdmove|fmul|fsmul|fdmul|fneg|fsneg|fdneg|frem|fscale|fsgldiv|fsglmul|fsin|fsinh|fsqrt|fssqrt|fdsqrt|fsub|fssub|fdsub|ftan|ftanh|ftentox|ftwotox)(\.[bwlsdxp])?\b</string>
-			<key>name</key>
-			<string>keyword.other.opcode.fpu.bwlsdxp.PowerISA</string>
+			<string>keyword.other.opcode.control.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
