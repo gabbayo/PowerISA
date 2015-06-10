@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Section</string>
 	<key>scope</key>
-	<string>meta.section.name.m68k</string>
+	<string>meta.section.name.PowerISA</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>

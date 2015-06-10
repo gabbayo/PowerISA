@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Macro</string>
 	<key>scope</key>
-	<string>variable.other.macro.m68k</string>
+	<string>variable.other.macro.PowerISA</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>

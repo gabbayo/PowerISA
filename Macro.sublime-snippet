@@ -4,6 +4,6 @@
         ENDM
         ]]></content>
     <tabTrigger>macro</tabTrigger>
-    <scope>source.asm.m68k</scope>
+    <scope>source.asm.PowerISA</scope>
     <description>Macro</description>
 </snippet>

@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Global Label</string>
 	<key>scope</key>
-	<string>meta.label.global.m68k</string>
+	<string>meta.label.global.PowerISA</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
