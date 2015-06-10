@@ -1,8 +1,9 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
+---
 name: PowerISA-Assembly
 scopeName: source.asm.PowerISA
 fileTypes: [s, i, asm]
-uuid: fe8dd09c-dc33-41eb-83d4-4cc6ed720ad2
+uuid: 375edd7a-cfa4-47d5-b8de-46e63a477897
 
 patterns:
 - name: string.quoted.double.PowerISA
