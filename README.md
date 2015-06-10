@@ -1,18 +1,17 @@
-# M68k-Assembly
+# Power ISA-Assembly
 
-A Motorola 68000 assembly language package for the
+A Power ISA assembly language package for the
 [Sublime Text](http://www.sublimetext.com) editor, based on the
-[M68k](https://github.com/stevenjs/M68k.tmbundle) bundle for
-[Textmate](http://macromates.com).
+[M68K Plugin for Sublime](https://github.com/stevenjs/M68k-Assembly) by Steve Saunders
 
 ### Installation
 
 ##### [Package Control][2]
 
 Open the Command Palette (Shift-Cmd-P in OS X, Shift-Ctrl-P in Linux/Windows).
-Select "Package Control: Install Package". Find and install M68k-Assembly.
+Select "Package Control: Install Package". Find and install PowerISA-Assembly.
 
-Package Control will automatically keep M68k Assembly up to date.
+Package Control will automatically keep Power ISA Assembly up to date.
 
 ##### Manual Installation
 
@@ -21,23 +20,23 @@ First you must locate the Sublime Text [packages folder][1], then:
 Manual installation via git:
 
     cd /path/to/sublime/packages/folder
-    git clone https://github.com/stevenjs/M68k-Assembly.git M68k-Assembly
+    git clone https://github.com/gabbayo/PowerISA.git
 
 Manual installation without git:
 
     cd /path/to/sublime/packages/folder
-    curl -L https://github.com/stevenjs/M68k-Assembly/tarball/master | tar xf -
+    curl -L https://github.com/gabbayo/PowerISA.git/tarball/master | tar xf -
 
 ### Contributing
 
-Pull requests welcome. Do *not* edit the `M68k-Assembly.tmLanguage` file
-directly. Edit the `M68k-Assembly.YAML-tmLanguage` file instead and build the
+Pull requests welcome. Do *not* edit the `PowerISA-Assembly.tmLanguage` file
+directly. Edit the `PowerISA-Assembly.YAML-tmLanguage` file instead and build the
 `.tmLanguage` file from it using
 [AAAPackageDev](https://github.com/SublimeText/AAAPackageDev).
 
 ### License
 
-**M68k-Assembly Copyright © 2012, 2015 Steven Saunders**
+**PowerISA-Assembly Copyright © 2012, 2015 Oded Gabbay**
 
 ```
 This program is free software: you can redistribute it and/or modify
