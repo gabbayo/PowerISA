@@ -41,115 +41,50 @@
 			<string>comment.line.asterisk</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>variable.other.symbol.PowerISA</string>
-				</dict>
-			</dict>
 			<key>match</key>
-			<string>(?i)^([a-zA-Z0-9_][a-zA-Z0-9_\.]*)(?=([ 	]*=|[ 	]+equ[ 	]+))</string>
-			<key>name</key>
-			<string>meta.equate.PowerISA</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.other.macro.PowerISA</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>variable.other.macro.PowerISA</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)(^([a-zA-Z0-9_\.]+)(:[ 	]*|[ 	]+)macro|^[ 	]+macro[ 	]+([a-zA-Z0-9_\.]+))[ 	]*$</string>
-			<key>name</key>
-			<string>meta.macro.PowerISA</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>meta.section.name.PowerISA</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)\bsection[ 	]+("[^"]+"|'[^']+'|[^,]+)</string>
-			<key>name</key>
-			<string>meta.section.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^[a-zA-Z_]([a-zA-Z0-9_]*|[a-zA-Z0-9_\.%\$]*[a-zA-Z0-9_])(?=$|[ 	:])</string>
+			<string>^(\s*[a-zA-Z][a-zA-Z0-9_]*:)</string>
 			<key>name</key>
 			<string>meta.label.global.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![a-zA-Z])\$[0-9A-Fa-f]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.hex.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;![a-zA-Z])@[0-7]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.octal.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;![a-zA-Z])%[01]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.binary.PowerISA</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>((?i)([rv][0-9]|[rv][1-2][0-9]|[rv]3[0-1]|vs[0-9]|vs[1-5][0-9]|vs6[0-3]))?\b</string>
 			<key>name</key>
-			<string>storage.other.register</string>
+			<string>storage.register</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(vperm)?\b</string>
+			<string>\b(vadduhm|vadduhs|vmladduhm|vmrghb|vmrglb|vmuleub|vmuloub|vperm|vpkuhus|vspltish|vsrh)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.vmx.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(xxswapd|xxlnand)?\b</string>
+			<string>\b(xxlnand|xxlnor|xxlxor|xxswapd)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.vsx.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(lwa|lxvd2x|stxvd2x)?\b</string>
+			<string>\b(lwa|lxvd2x|lxvw4x|stxvd2x)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.memory.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(addi|addis|li|lis)?\b</string>
+			<string>\b(addi|addis|li|lis)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.arithmetic.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(blr)?\b</string>
+			<string>\b(blr)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.control.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\billegal\b</string>
+			<string>\billegal\b</string>
 			<key>name</key>
 			<string>invalid.illegal.opcode.PowerISA</string>
 		</dict>
