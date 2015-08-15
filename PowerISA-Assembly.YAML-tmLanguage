@@ -25,19 +25,19 @@ patterns:
   match: ((?i)([rv][0-9]|[rv][1-2][0-9]|[rv]3[0-1]|vs[0-9]|vs[1-5][0-9]|vs6[0-3]))?\b
 
 - name: keyword.other.opcode.vmx.PowerISA
-  match: \b(vadduhm|vadduhs|vmladduhm|vmrghb|vmrglb|vmuleub|vmuloub|vperm|vpkuhus|vspltish|vsrh)\b
+  match: \b(vadduhm|vadduhs|vmaxfp|vmladduhm|vmrghb|vmrglb|vmrghw|vmrglw|vmuleub|vmuloub|vperm|vpkuhus|vspltish|vspltisw|vspltw|vsrh)\b
 
 - name: keyword.other.opcode.vsx.PowerISA
-  match: \b(xxlnand|xxlnor|xxlxor|xxswapd)\b
+  match: \b(xxland|xxlnand|xxlnor|xxlor|xxlxor|xxsel|xxswapd)\b
 
 - name: keyword.other.opcode.memory.PowerISA
-  match: \b(lwa|lxvd2x|lxvw4x|stxvd2x)\b
+  match: \b(ld|lbz|lhz|lwa|lwz|lwzx|lxvd2x|lxvw4x|stb|std|stdu|stfd|sth|stvx|stw|stxvd2x)\b
 
 - name: keyword.other.opcode.arithmetic.PowerISA
-  match: \b(addi|addis|li|lis)\b
+  match: \b(add|addi|addis|li|lis|mr|mulld|mulli|mullw|or|ori|srwi)\b
 
 - name: keyword.other.opcode.control.PowerISA
-  match: \b(blr)\b
+  match: \b(b|blr|bt|cmplw|cmplwi|cmpwi|nop)\b
 
 - name: invalid.illegal.opcode.PowerISA
   match: \billegal\b

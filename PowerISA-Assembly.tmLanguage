@@ -54,31 +54,31 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(vadduhm|vadduhs|vmladduhm|vmrghb|vmrglb|vmuleub|vmuloub|vperm|vpkuhus|vspltish|vsrh)\b</string>
+			<string>\b(vadduhm|vadduhs|vmaxfp|vmladduhm|vmrghb|vmrglb|vmrghw|vmrglw|vmuleub|vmuloub|vperm|vpkuhus|vspltish|vspltisw|vspltw|vsrh)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.vmx.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(xxlnand|xxlnor|xxlxor|xxswapd)\b</string>
+			<string>\b(xxland|xxlnand|xxlnor|xxlor|xxlxor|xxsel|xxswapd)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.vsx.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(lwa|lxvd2x|lxvw4x|stxvd2x)\b</string>
+			<string>\b(ld|lbz|lhz|lwa|lwz|lwzx|lxvd2x|lxvw4x|stb|std|stdu|stfd|sth|stvx|stw|stxvd2x)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.memory.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(addi|addis|li|lis)\b</string>
+			<string>\b(add|addi|addis|li|lis|mr|mulld|mulli|mullw|or|ori|srwi)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.arithmetic.PowerISA</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(blr)\b</string>
+			<string>\b(b|blr|bt|cmplw|cmplwi|cmpwi|nop)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.control.PowerISA</string>
 		</dict>
